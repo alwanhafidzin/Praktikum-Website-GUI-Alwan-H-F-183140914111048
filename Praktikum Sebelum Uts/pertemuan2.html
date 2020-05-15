@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pertemuan 2</title>
+    <script type="text/javascript">
+        window.setTimeout("waktu()",1000);
+        function waktu() {
+            var tanggal = new Date();
+            setTimeout("waktu()",1000);
+            document.getElementById("jam").innerHTML = tanggal.getHours();
+            document.getElementById("menit").innerHTML = tanggal.getMinutes();
+            document.getElementById("detik").innerHTML = tanggal.getSeconds();
+        }
+    </script>
+
+    <style>
+         #jam-digital{overflow:hidden; width:350px}
+    #hours{float:left; width:100px; height:50px; background-color:#6B9AB8; margin-right:25px}
+    #minute{float:left; width:100px; height:50px; background-color:#A5B1CB}
+    #second{float:right; width:100px; height:50px; background-color:#FF618A; margin-left:25px}
+    #jam-digital p{color:#FFF; font-size:36px; text-align:center; margin-top:4px}
+        /* margin untuk memberi batas pada luar div
+        padding untuk memberi batas di dalam div */
+        .kotak1{
+            width: 500px;
+            height: 200px;
+            background-color: chartreuse;
+            margin-top: 100px;
+            margin-left: 100px;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-right: 100px;
+            border:5px dashed blue;
+            box-sizing: border-box;
+        }
+        /* padding atas 20px bawah 20px */
+        .kotak2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            padding: 20px 20px;
+        }
+        /* margin auto posisi di tengah */
+        .kotak3{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: auto;
+        }
+        /* memiliki margin atas bawah kanan kiri */
+        .kotak4{
+            width: 100px;
+            height: 100px;
+            background-color:slategrey;
+           
+            margin: 10px 20px 19px 29px;
+        }
+        /* memiliki margin atas 10 bawah 20 */
+        .kotak5{
+            width: 100px;
+            height: 100px;
+            background-color:tomato;
+           
+            margin: 10px 20px ;
+        }
+    </style>
+</head>
+<body>
+        <div id="jam-digital">
+                <div id="hours"><p id="jam"></p></div>
+                <div id="minute"><p id="menit"></p></div>
+                <div id="second"><p id="detik"></p></div>
+            </div>
+
+<div class="kotak1">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, pariatur sequi neque, aut provident totam perferendis amet temporibus quidem sit repellat magnam libero fugiat itaque maxime doloribus, accusantium maiores minima!
+</div>
+<div class="kotak2"></div>
+<div class="kotak3"></div>
+<div class="kotak4"></div>
+<div class="kotak5"></div>
+    
+</body>
+</html>

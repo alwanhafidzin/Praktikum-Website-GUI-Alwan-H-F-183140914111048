@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sidebar1{
+            width: 200px;
+            height: 100%;
+            background-color: sandybrown;
+            position: fixed;
+        }
+
+        .main1{
+            width: 700px;
+            height: 500px;
+            background-color: slategray;
+            margin-left: 200px;
+        }
+
+        .sidebar{
+            width: 0px;
+            height: 100%;
+            background-color: sandybrown;
+            position: fixed;
+        }
+
+        .main{
+            width: 700px;
+            height: 500px;
+            background-color: slategray;
+            margin-left: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="sidebar">
+
+    <ul>
+        <li>Home</li>
+        <li>Profil</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+    <div class="main">
+        <span style="font-size: 30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+        <h1>Ini Konten Utama</h1>
+    </div>
+
+</body>
+</html>

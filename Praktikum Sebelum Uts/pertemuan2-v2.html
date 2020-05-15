@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height:1100px;
+            border: 2px solid black;
+            margin: auto;
+            position: relative;
+        }
+        .div2 {
+  background-color:cadetblue;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin: 2px 2px;
+  cursor: pointer;
+  position:fixed;
+  border-radius:20px;
+  right: 2%;
+}
+.button1 {font-size: 16px; background-color: violet;}
+.button2 {font-size: 16px; margin-top: 10px; background-color: violet;}
+
+        .judul{
+            width: 800px;
+            height: 100px;
+            /* border: 1px solid black; */
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        
+        
+        .menu{
+            width: 800px;
+            height: 30px;
+            border: 1px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        
+        .banner{
+            background-color: yellow;
+            width: 800px;
+            height:200px;
+            background-image: url(slide4.jpg);
+            background-size:cover;
+            background-position-y: 150px;
+        }
+        .konten img{
+            float: left;
+            width:200px;
+            height:200px;
+        }
+        .konten{
+            width: 800px;
+            height: 320px;
+            overflow:auto;
+            background-color: yellow;
+        }
+        .galery{
+            background-color: darkviolet;
+            margin: 5px 5px 5px 5px;
+            width:190px;
+            height:100px;
+            float:left;
+            background-image: url(logogogo.png);
+            background-size:cover;
+        }
+        .thumnails{
+            width: 170px;
+            height: 40px;
+            margin:10px auto;
+            background-color: brown ; 
+        }
+        .ribbon{
+            width:100px;
+            height: 100px;
+            position:absolute;
+            background-image: url(twtr-rbn.png);
+            left: 700px;
+            top:-15px;
+        }
+        .layarhitam{
+          border-radius: 50px;
+
+        }
+
+    </style>
+</head>
+<body>
+        <div class="div2">
+                <button class="button1" onclick="ubahwarna_dark()">Mode Malam</button>
+                <br>
+                <button class="button2" onclick="ubahwarna_light()">Mode Siang</button>
+                </div>
+    <div class="container">
+        <div class="ribbon"></div>
+        <div class="judul">
+            <h1>WEBSITEKU</h1>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="banner"></div>
+            <div class="judul">
+                <h2 class="layarhitam">Judul Website</h2>
+                <p>Ditulis oleh Alwan</p>
+            </div>
+            <div id="konten" class="konten">
+                <img src="logogogo.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ex quisquam minus sint velit adipisci ipsum aliquid, dolorum hic, nostrum animi error voluptas deleniti nam provident enim. Alias, nulla nostrum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quasi id exercitationem consequuntur laborum nisi error fugiat eaque perspiciatis atque iure pariatur et officiis, vero cupiditate, quis culpa reiciendis est.
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, enim omnis laborum numquam maiores fuga vel at nisi, perferendis voluptas deleniti sequi repudiandae aliquam ratione quidem vitae atque. Harum, pariatur?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, accusantium voluptates tenetur iusto autem, laudantium esse dolorem consectetur minus dolore eius voluptatum natus consequuntur enim consequatur aliquam in sit. Nam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, officiis? Ipsum eveniet atque ducimus rerum nihil? Atque rerum iste cupiditate molestiae commodi animi. Ex reprehenderit veniam, quam at id odio.</p>
+
+            </div>
+           <div class="galery">1</div>
+           <div class="galery">2</div>
+           <div class="galery">3</div>
+           <div class="galery">4</div>
+           <div class="galery">5</div>
+           <div class="galery">6</div>
+           <div class="galery">7</div>
+           <div class="galery">8</div>
+
+
+            </div>
+            <div id="cobaeventku" class="cobaevent" onmouseup="divkelakuan()" onmousedown="divkelakuan1()"></div>
+</body>
+
+<script>
+        function ubahwarna_dark(){
+            document.getElementById('konten').style.backgroundColor="black";
+            document.getElementById('konten').style.color="white";
+        }
+        function ubahwarna_light(){
+            document.getElementById('konten').style.backgroundColor="yellow";
+            document.getElementById('konten').style.color="black";
+        }
+    </script>
+</html>
